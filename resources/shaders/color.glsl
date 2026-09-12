@@ -3,6 +3,7 @@
 precision highp float;
 
 #define PI 3.14159265358979323846
+#define COLOR_PALETTE 1
 
 in vec2 fragTexCoord;
 out vec4 finalColor;
@@ -23,12 +24,20 @@ uniform float stripeContrast;
 uniform float stripeGamma;
 
 // --- Palette Definition ---
+#if COLOR_PALETTE == 0
 const int palettecount = 3;
 vec3 colorpalette[palettecount] = {
     vec3(20.0, -50.0, 255.0) / 255.0,
     vec3(220.0,   0.0, 200.0) / 255.0,
     vec3(255.0, 100.0,   0.0) / 255.0
 };
+#else
+const int palettecount = 2;
+vec3 colorpalette[palettecount] = {
+    vec3(0., 180.0, 200.0) / 255.0,
+    vec3(220.0,   0.0, 200.0) / 255.0
+};
+#endif
 
 // --- Helper Functions ---
 
