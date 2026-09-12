@@ -2,6 +2,10 @@
 *
 *   raygui v4.0 - A simple and easy-to-use immediate-mode gui library
 *
+*   ALTERED VERSION: GuiDrawRectangle has been modified to draw rounded rectangles (Line 4973)
+*   Usage:
+*   #define RAYGUI_CUSTOM_ROUNDED_RECTS
+*
 *   DESCRIPTION:
 *       raygui is a tools-dev-focused immediate-mode-gui library based on raylib but also
 *       available as a standalone library, as long as input and drawing functions are provided.
@@ -319,7 +323,7 @@
 #define RAYGUI_VERSION  "4.0"
 
 #if !defined(RAYGUI_STANDALONE)
-    #include "raylib/src/raylib.h"
+    #include "../../raylib/src/raylib.h"
 #endif
 
 // Function specifiers in case library is build/used as a shared library (Windows)
