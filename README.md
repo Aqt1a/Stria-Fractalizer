@@ -1,4 +1,4 @@
-Stria Fractalizer is a Mndelbrot renderer designed to support the deep zoom capabilities of perturbation theory, the beauty of the stripe coloring method, and the speed of modern GLSL renderers
+Stria Fractalizer is a Mndelbrot set renderer designed to support the deep zoom capabilities of perturbation theory, the beauty of the stripe coloring method, and the speed of modern GLSL renderers
 
 Currently I have implemented the last two and am working on perturbation theory on another branch.
 
