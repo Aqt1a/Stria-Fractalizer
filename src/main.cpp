@@ -6,7 +6,7 @@
 #define RAYGUI_TEXTBOX_AUTO_CURSOR_DELAY 5
 #define RAYGUI_CUSTOM_ROUNDED_RECTS
 #define RAYGUI_IMPLEMENTATION
-#include "../resources/raygui.h"
+#include "../../Raylib/raygui.h"
 
 #include "../resources/tinyfiledialogs.h"
 #include <fstream>
