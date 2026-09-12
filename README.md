@@ -1,17 +1,17 @@
-> Stria Fractalizer
+### Stria Fractalizer
 is a Mndelbrot set renderer designed to support the deep zoom capabilities of perturbation theory, the beauty of the stripe coloring method, and the speed of modern GLSL renderers
 
 Currently I have implemented the last two and am working on perturbation theory on another branch.
 
 I should also note that while this project is NOT vibe coded. I have never made a perturbation renderer before, so extensive LLM research and code writing was needed.
 
-> Raylib Instructions
+# Raylib Instructions
 
 Both Raylib and RayGui must be in a folder named "Raylib" right next to the folder of the project
 
 Also, while it isn't necessary, replace DrawGuiRectangle() at line 4935 with:
 
-//
+```
 static void GuiDrawRectangle(Rectangle rec, int borderWidth, Color borderColor, Color color)
 {
 #if defined(RAYGUI_CUSTOM_ROUNDED_RECTS)
@@ -60,3 +60,4 @@ static void GuiDrawRectangle(Rectangle rec, int borderWidth, Color borderColor, 
     DrawRectangle((int)rec.x, (int)rec.y, (int)rec.width, (int)rec.height, Fade(RED, 0.4f));
 #endif
 }
+```
