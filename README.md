@@ -10,6 +10,8 @@ I should also note that while this project is NOT vibe coded. I have never made 
 Both Raylib and RayGui must be in a folder named "Raylib" right next to the folder of the project
 
 Also, while it isn't necessary, replace DrawGuiRectangle() at line 4935 with:
+
+//
 static void GuiDrawRectangle(Rectangle rec, int borderWidth, Color borderColor, Color color)
 {
 #if defined(RAYGUI_CUSTOM_ROUNDED_RECTS)
