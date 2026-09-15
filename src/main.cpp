@@ -752,8 +752,8 @@ int main(void) {
         // Shading & stripes
         {"Light Height", "Shading", &lightHeight, 0.01f, 100.0f, "G/B"},
         {"Stripe Frequency", "Shading", &stripeFreq, 0.0f, 100.0f, "3/E"},
-        {"Stripe Offset", "Shading", &stripeOffset, 0.0f, 100.0f, "4/R"},
-        {"Stripe Shift", "Shading", &stripeLift, -10.0f, 10.0f, "5/T"},
+        {"Stripe Offset", "Shading", &stripeOffset, -100.0f, 100.0f, "4/R"},
+        {"Stripe Lift", "Shading", &stripeLift, -25.0f, 25.0f, "5/T"},
         {"Stripe Contrast", "Shading", &stripeContrast, 0.0f, 10.0f, "6/Y"},
         {"Stripe Gamma", "Shading", &stripeGamma, -10.0f, 10.0f, "7/U"},
         

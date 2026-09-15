@@ -3,7 +3,7 @@
 precision highp float;
 
 #define PI 3.14159265358979323846
-#define COLOR_PALETTE 1
+#define COLOR_PALETTE 0
 
 in vec2 fragTexCoord;
 out vec4 finalColor;
