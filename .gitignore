@@ -1,5 +1,9 @@
 /build/*
 /.vscode/*
+=======
+/.vscode/
+/external/*
+>>>>>>> 695afb0 (Moved external dependancies to CMakeLists)
 /.clangd
 *.exe
 *.pdb

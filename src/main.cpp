@@ -1,12 +1,12 @@
-#include "../../Raylib/src/external/glad.h"
-#include "../../Raylib/src/raylib.h"
-#include "../../Raylib/src/raymath.h"
-#include "../../Raylib/src/rlgl.h"
+#include <raylib.h>
+#include "../external/raylib/src/raymath.h"
+#include "../external/raylib/src/rlgl.h"
+#include "../external/raylib/src/external/glad.h"
 
 #define RAYGUI_TEXTBOX_AUTO_CURSOR_DELAY 5
 #define RAYGUI_CUSTOM_ROUNDED_RECTS
 #define RAYGUI_IMPLEMENTATION
-#include "../../Raylib/raygui.h"
+#include "../external/raygui.h"
 
 #include "../resources/tinyfiledialogs.h"
 #include <fstream>
@@ -343,7 +343,7 @@ public:
 RenderTexture2D LoadRenderTexture32Bit(int width, int height) {
     RenderTexture2D dataTransport = { 0 };
 
-    dataTransport.id = rlLoadFramebuffer(width, height);
+    dataTransport.id = rlLoadFramebuffer();
     if (dataTransport.id > 0) {
         rlEnableFramebuffer(dataTransport.id);
 
@@ -378,7 +378,7 @@ RenderTexture2D LoadRenderTexture32Bit(int width, int height) {
 RenderTexture2D LoadRenderTexture16Bit(int width, int height) {
     RenderTexture2D dataTransport = { 0 };
 
-    dataTransport.id = rlLoadFramebuffer(width, height);
+    dataTransport.id = rlLoadFramebuffer();
     if (dataTransport.id > 0) {
         rlEnableFramebuffer(dataTransport.id);
 
